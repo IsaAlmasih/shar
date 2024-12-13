@@ -1,17 +1,16 @@
 .wrapper {
     background-color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 50px;
     color: #25fa00;
-    display: flex;
-    gap: 200px;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
 }
 
-.intro {
+/* .intro {
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
@@ -23,10 +22,11 @@
 
 .wrappe {
     background-image: url("../assets/kle1.jpg");
+    margin-top: 50px;
     background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
     background-position: center;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-}
+} */
