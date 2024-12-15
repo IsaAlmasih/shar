@@ -12,6 +12,9 @@
     z-index: 999;
     transform: translate(-50%, calc(-100% - 24px));
     transition: 0.4s transform ease-in-out;
+    -webkit-box-shadow: -3px 9px 8px -2px rgba(34, 60, 80, 0.35);
+    -moz-box-shadow: -3px 9px 8px -2px rgba(34, 60, 80, 0.35);
+    box-shadow: -3px 9px 8px -2px rgba(34, 60, 80, 0.35);
 }
 
 .isVisible {
