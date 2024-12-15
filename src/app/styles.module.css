@@ -6,13 +6,12 @@
   width: 100%;
   align-items: center;
   gap: 30px;
-
 }
 
 .intro {
   background-image: url("../assets/image.png");
   background-position: center;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   color: azure;
   height: 80vh;
@@ -80,4 +79,11 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media (max-width: 450px) {
+  .intro {
+    font-size: 22px;
+    text-align: center;
+  }
 }
