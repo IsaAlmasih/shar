@@ -13,7 +13,8 @@
     "clsx": "^2.1.1",
     "next": "15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-simple-image-viewer": "^1.2.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

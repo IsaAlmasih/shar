@@ -1,8 +1,46 @@
+"use client";
 import styles from "./styles.module.css";
+import ImageViewer from "react-simple-image-viewer";
 
-import logo from "../assets/sharov.png"
+import logo from "../assets/sharov.png";
+
+import img1 from "../assets/kle1.jpg";
+import img2 from "../assets/kle2.jpg";
+import img3 from "../assets/kle3.jpg";
+import img4 from "../assets/kle4.jpg";
+import img5 from "../assets/kle5.jpg";
+import img6 from "../assets/kle6.jpg";
+import img7 from "../assets/kle7.jpg";
+import img8 from "../assets/kle8.jpg";
+import img9 from "../assets/kle9.jpg";
+import img10 from "../assets/kle9.png";
+import { useCallback, useState } from "react";
 
 export default function Home() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const images = [
+    img1.src,
+    img2.src,
+    img3.src,
+    img4.src,
+    img5.src,
+    img6.src,
+    img7.src,
+    img8.src,
+    img9.src,
+    img10.src,
+  ];
+
+  const openImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  };
   return (
     <div className={styles.wrapper}>
       <div className={styles.intro}>
@@ -51,6 +89,31 @@ export default function Home() {
               клиентов.
             </li>
           </ul>
+        </div>
+        <div className={styles.photos}>
+          {images.map((src, index) => (
+            <img
+              src={src}
+              onClick={() => openImageViewer(index)}
+              width="300"
+              key={index}
+              style={{ margin: "2px" }}
+              alt=""
+            />
+          ))}
+
+          {isViewerOpen && (
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              closeOnClickOutside={true}
+            />
+          )}
         </div>
         <div className={styles.about}>
           <h2>Клеемазательные машины: МКМ39 и МКМ59</h2>
@@ -126,19 +189,39 @@ export default function Home() {
           ></iframe>
         </div>
         <div className={styles.video}>
-            <h2>Загиб клапанов</h2>
-            <iframe
-              width="720"
-              height="405"
-              src="https://rutube.ru/play/embed/cb0d52ef97865933fe6f6a289fb29242/"
-              frameBorder="0"
-              allow="clipboard-write; autoplay"
-              webkitAllowFullScreen
-              mozallowfullscreen
-              allowFullScreen
-            ></iframe>
-            <iframe width="720" height="405" src="https://rutube.ru/play/embed/a8ba3e3ee71420219c642c4715dad14f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-          </div>
+          <h2>Загиб клапанов</h2>
+          <iframe
+            width="720"
+            height="405"
+            src="https://rutube.ru/play/embed/cb0d52ef97865933fe6f6a289fb29242/"
+            frameBorder="0"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowFullScreen
+          ></iframe>
+          <iframe
+            width="720"
+            height="405"
+            src="https://rutube.ru/play/embed/a8ba3e3ee71420219c642c4715dad14f/"
+            frameBorder="0"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowFullScreen
+          ></iframe>
+        </div>
+        <div className={styles.feedback}>
+          <h2>Отзывы наших клиентов.</h2>
+          <p>
+            Коллеги, добрый день! Тут написать о отзывах и способе написания.
+            Каждый день, работая с ней — мысленно благодарим вас за идею и
+            воплощение! Это просто чудо какое-то! Экономия клея, скорость —
+            супер! Поняли, что просто обязаны выразить вам свою благодарность и
+            восхищение! Желаем вам процветания, новых классных идей и здоровья
+            всему вашему коллективу! Спасибо!
+          </p>
+        </div>
       </div>
     </div>
   );
