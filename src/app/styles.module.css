@@ -49,6 +49,12 @@
   gap: 40px;
 }
 
+.video iframe {
+  width: 100% !important;
+  min-width: none;
+  width: 100%; height: auto; aspect-ratio: 16/9;
+}
+
 /* .about h2 {
 
 }

@@ -109,45 +109,36 @@ export default function Home() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen="">
-            </iframe>
+            allowfullscreen=""
+          ></iframe>
         </div>
         <div className={styles.video}>
           <h2>Машина в работе</h2>
           <iframe
-            title="Клеемазательная машина made in RUSSIA II"
-            width="750"
-            height="422"
-            src="https://www.youtube.com/embed/tRx2R0ubAvA?feature=oembed"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen=""
+            width="720"
+            height="405"
+            src="https://rutube.ru/play/embed/59ed7d58c1b327282743d5f1a12da5e2/"
+            frameBorder="0"
+            allow="clipboard-write; autoplay"
+            webkitAllowFullScreen
+            mozallowfullscreen
+            allowFullScreen
           ></iframe>
-            <div className={styles.video}>
-              <h2>Загиб клапанов</h2>
-              <iframe
-                title="Изготовление обложек для твердого переплета"
-                width="750"
-                height="422"
-                src="https://www.youtube.com/embed/wQYk2HmUy2M?feature=oembed"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen=""
-              ></iframe>
-              <iframe
-                title="Клеемазкательная машина и загиб клапанов."
-                width="750"
-                height="422"
-                src="https://www.youtube.com/embed/aaf1NMg0x9A?feature=oembed"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen=""
-              ></iframe>
-            </div>
         </div>
+        <div className={styles.video}>
+            <h2>Загиб клапанов</h2>
+            <iframe
+              width="720"
+              height="405"
+              src="https://rutube.ru/play/embed/cb0d52ef97865933fe6f6a289fb29242/"
+              frameBorder="0"
+              allow="clipboard-write; autoplay"
+              webkitAllowFullScreen
+              mozallowfullscreen
+              allowFullScreen
+            ></iframe>
+            <iframe width="720" height="405" src="https://rutube.ru/play/embed/a8ba3e3ee71420219c642c4715dad14f/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
       </div>
     </div>
   );
