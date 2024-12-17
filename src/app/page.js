@@ -7,12 +7,12 @@ import logo from "../assets/sharov.png";
 import img1 from "../assets/kle1.jpg";
 import img2 from "../assets/kle2.jpg";
 import img3 from "../assets/kle3.jpg";
-import img4 from "../assets/kle4.jpg";
+// import img4 from "../assets/kle4.jpg";
 import img5 from "../assets/kle5.jpg";
 import img6 from "../assets/kle6.jpg";
 import img7 from "../assets/kle7.jpg";
 import img8 from "../assets/kle8.jpg";
-import img9 from "../assets/kle9.jpg";
+// import img9 from "../assets/kle9.jpg";
 import img10 from "../assets/kle9.png";
 import { useCallback, useState } from "react";
 
@@ -23,12 +23,12 @@ export default function Home() {
     img1.src,
     img2.src,
     img3.src,
-    img4.src,
+    // img4.src,
     img5.src,
     img6.src,
     img7.src,
     img8.src,
-    img9.src,
+    // img9.src,
     img10.src,
   ];
 
