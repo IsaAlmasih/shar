@@ -18,7 +18,7 @@ const Header = () => {
       </Link>
       <div className={styles.navigation}>
         <Link href={"/"}>Главная страница</Link>
-        <Link href={"/"}>О нас</Link>
+        <Link href={"/about"}>О нас</Link>
         <Link href={"/"}>Контакты</Link>
       </div>
       <button onClick={() => setIsOpen(!isOpen)} className={styles.openPopup}>
@@ -54,7 +54,7 @@ const Header = () => {
 
             <div className={styles.navigation}>
               <Link href={"/"}>Главная страница</Link>
-              <Link href={"/"}>О нас</Link>
+              <Link href={"/about"}>О нас</Link>
               <Link href={"/"}>Контакты</Link>
             </div>
           </div>

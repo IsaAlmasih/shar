@@ -149,30 +149,24 @@ export default function Home() {
             width="750"
             height="422"
             src="https://www.youtube.com/embed/Qx5B9isjumQ?feature=oembed"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen=""
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
           <iframe
             title="9 октября 2021 г."
             width="750"
             height="422"
             src="https://www.youtube.com/embed/cPrfIAsJZFw?feature=oembed"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen=""
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
           <iframe
             title="Клеемазательная машина made in RUSSIA"
             width="750"
             height="422"
             src="https://www.youtube.com/embed/VxbTsAnSNwk?feature=oembed"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen=""
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
         <div className={styles.video}>
@@ -181,11 +175,7 @@ export default function Home() {
             width="720"
             height="405"
             src="https://rutube.ru/play/embed/59ed7d58c1b327282743d5f1a12da5e2/"
-            frameBorder="0"
             allow="clipboard-write; autoplay"
-            webkitAllowFullScreen
-            mozallowfullscreen
-            allowFullScreen
           ></iframe>
         </div>
         <div className={styles.video}>
@@ -194,21 +184,13 @@ export default function Home() {
             width="720"
             height="405"
             src="https://rutube.ru/play/embed/cb0d52ef97865933fe6f6a289fb29242/"
-            frameBorder="0"
             allow="clipboard-write; autoplay"
-            webkitAllowFullScreen
-            mozallowfullscreen
-            allowFullScreen
           ></iframe>
           <iframe
             width="720"
             height="405"
             src="https://rutube.ru/play/embed/a8ba3e3ee71420219c642c4715dad14f/"
-            frameBorder="0"
             allow="clipboard-write; autoplay"
-            webkitAllowFullScreen
-            mozallowfullscreen
-            allowFullScreen
           ></iframe>
         </div>
         <div className={styles.feedback}>
