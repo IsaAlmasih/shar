@@ -7,12 +7,10 @@ import logo from "../assets/sharov.png";
 import img1 from "../assets/kle1.jpg";
 import img2 from "../assets/kle2.jpg";
 import img3 from "../assets/kle3.jpg";
-// import img4 from "../assets/kle4.jpg";
 import img5 from "../assets/kle5.jpg";
 import img6 from "../assets/kle6.jpg";
 import img7 from "../assets/kle7.jpg";
 import img8 from "../assets/kle8.jpg";
-// import img9 from "../assets/kle9.jpg";
 import img10 from "../assets/kle9.png";
 import { useCallback, useState } from "react";
 
@@ -56,7 +54,7 @@ export default function Home() {
                 "https://www.google.com/maps/search/119071,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D1%83%D0%BB%20%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5,%2010,"
               }
             >
-              119071, Москва, ул Электролитный проезд, 16А (Магазин ГРАЙ второй этаж)
+              119071, Москва, ул Электролитный проезд, 16А (ТЦ "ГРАЙ" второй этаж)
             </a>
           </div>
           <div>
