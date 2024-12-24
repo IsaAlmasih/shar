@@ -5,6 +5,10 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 import Link from "next/link";
 
+import Image from 'next/image'
+
+import logo from '../../assets/222.png'
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -14,6 +18,7 @@ const Header = () => {
   return (
     <header className={headerClasses}>
       <Link className={styles.logo} href={"/"}>
+        <Image src={logo} width={45} height={45} alt="logo" />
         SHAROV technologies
       </Link>
       <div className={styles.navigation}>

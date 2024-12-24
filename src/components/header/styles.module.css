@@ -29,7 +29,12 @@
 
 .logo {
   font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
+
 
 .openPopup {
   display: none;

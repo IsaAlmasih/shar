@@ -4,6 +4,7 @@ import ImageViewer from "react-simple-image-viewer";
 
 import logo from "../assets/sharov.png";
 
+
 import img1 from "../assets/kle1.jpg";
 import img2 from "../assets/kle2.jpg";
 import img3 from "../assets/kle3.jpg";
@@ -13,6 +14,11 @@ import img7 from "../assets/kle7.jpg";
 import img8 from "../assets/kle8.jpg";
 import img10 from "../assets/kle9.png";
 import { useCallback, useState } from "react";
+
+import Image from 'next/image'
+
+import img11 from "../assets/logo_1k.png";
+import Link from "next/link";
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -54,7 +60,8 @@ export default function Home() {
                 "https://www.google.com/maps/search/119071,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,%20%D1%83%D0%BB%20%D0%9E%D1%80%D0%B4%D0%B6%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8%D0%B4%D0%B7%D0%B5,%2010,"
               }
             >
-              119071, Москва, ул Электролитный проезд, 16А (ТЦ "ГРАЙ" второй этаж)
+              119071, Москва, ул Электролитный проезд, 16А (ТЦ "ГРАЙ" второй
+              этаж)
             </a>
           </div>
           <div>
@@ -62,7 +69,7 @@ export default function Home() {
           </div>
           <div>
             email:
-            <a href={"mailto:info@sharov-tech.com"}>  23v@mail.ru</a>
+            <a href={"mailto:info@sharov-tech.com"}> 23v@mail.ru</a>
           </div>
         </div>
         <div className={styles.about}>
@@ -192,15 +199,18 @@ export default function Home() {
           ></iframe>
         </div>
         <div className={styles.feedback}>
-          <h2>Отзывы наших клиентов.</h2>
-          <p>
+          <h2>Наше сообщество.</h2>
+          <Link href="https://1copy.ru/">
+            <Image src={img11} width={450} height={90} alt="logo" />
+          </Link>
+          {/* <p>
             Коллеги, добрый день! Тут написать о отзывах и способе написания.
             Каждый день, работая с ней — мысленно благодарим вас за идею и
             воплощение! Это просто чудо какое-то! Экономия клея, скорость —
             супер! Поняли, что просто обязаны выразить вам свою благодарность и
             восхищение! Желаем вам процветания, новых классных идей и здоровья
             всему вашему коллективу! Спасибо!
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

@@ -32,6 +32,7 @@
   width: 100%;
 }
 
+
 .section {
   width: 100%;
   max-width: 1300px;
@@ -132,4 +133,14 @@
     flex-direction: column;
     gap: 12px;
   }
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  gap: 10px;
 }
