@@ -7,7 +7,7 @@ import Link from "next/link";
 
 import Image from 'next/image'
 
-import logo from '../../assets/222.png'
+import logo from '../../assets/mkm.png'
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
