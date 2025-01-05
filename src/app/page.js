@@ -201,7 +201,7 @@ export default function Home() {
         <div className={styles.feedback}>
           <h2>Наше сообщество.</h2>
           <Link href="https://1copy.ru/">
-            <Image src={img11} width={450} height={90} alt="logo" />
+            <Image src={img11} width={250} height={50} alt="logo" />
           </Link>
           {/* <p>
             Коллеги, добрый день! Тут написать о отзывах и способе написания.
