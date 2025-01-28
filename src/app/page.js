@@ -4,7 +4,6 @@ import ImageViewer from "react-simple-image-viewer";
 
 import logo from "../assets/sharov.png";
 
-
 import img1 from "../assets/kle1.jpg";
 import img2 from "../assets/kle2.jpg";
 import img3 from "../assets/kle3.jpg";
@@ -13,27 +12,35 @@ import img6 from "../assets/kle6.jpg";
 import img7 from "../assets/kle7.jpg";
 import img8 from "../assets/kle8.jpg";
 import img10 from "../assets/kle9.png";
+import img15 from "../assets/mkm39_1.jpg";
+import img12 from "../assets/mkm39_2.jpg";
+import img13 from "../assets/mkm39_3.jpg";
+import img14 from "../assets/mkm39_4.jpg";
+
 import { useCallback, useState } from "react";
 
-import Image from 'next/image'
+import Image from "next/image";
 
 import img11 from "../assets/logo_1k.png";
+import img16 from "../assets/мкм.jpg";
 import Link from "next/link";
 
 export default function Home() {
   const [currentImage, setCurrentImage] = useState(0);
   const [isViewerOpen, setIsViewerOpen] = useState(false);
   const images = [
+    img15.src,
+    img12.src,
+    img13.src,
+    img14.src,
+    img10.src,
     img1.src,
     img2.src,
     img3.src,
-    // img4.src,
     img5.src,
     img6.src,
     img7.src,
     img8.src,
-    // img9.src,
-    img10.src,
   ];
 
   const openImageViewer = useCallback((index) => {
@@ -115,6 +122,9 @@ export default function Home() {
               disableScroll={false}
               backgroundStyle={{
                 backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              style={{
+                padding: "60px",
               }}
               closeOnClickOutside={true}
             />
@@ -203,15 +213,51 @@ export default function Home() {
           <Link href="https://1copy.ru/">
             <Image src={img11} width={250} height={50} alt="logo" />
           </Link>
-          {/* <p>
-            Коллеги, добрый день! Тут написать о отзывах и способе написания.
-            Каждый день, работая с ней — мысленно благодарим вас за идею и
-            воплощение! Это просто чудо какое-то! Экономия клея, скорость —
-            супер! Поняли, что просто обязаны выразить вам свою благодарность и
-            восхищение! Желаем вам процветания, новых классных идей и здоровья
-            всему вашему коллективу! Спасибо!
-          </p> */}
         </div>
+        <div className={styles.feedback}></div>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A590e57a4b7be241dc451428b14f86ef59816a8888cea70038fb858f36b1a71e4&amp;source=constructor"
+          width="100%"
+          height="400"
+          frameborder="0"
+        ></iframe>
+        {/* Подвал */}
+        <footer className={styles.footer}>
+          {/*Препроцессор. Что это */}
+
+          {/* Stylus, ++++(SASS/SCSS) - надо разобрать!!!!! */}
+
+          {/* БЭМ - методология БЛОК-ЭЛЕМЕНТ-МОДИФИКАТОР */}
+          {/* <footer className="footer">
+                <div className="footer__col">
+                    <a className="footer__col-link footer__col-link_active">
+                    </a>
+                    <a className="footer__col-link">
+                    </a>
+                    <a className="footer__col-link">
+                    </a>
+                </div>
+          </footer> */}
+
+          {/* Левая колонка */}
+          <div className={styles.footerCol}>
+            <a href="\"><Image className={styles.footerLogo} src={img16} width={60} height={50} alt="logo" /></a>
+            <h3 className={styles.footerHeading}>Реквизиты</h3>
+            <div className={styles.footerGroup}>
+              <p className={styles.footerText}>ИНН.0000000000</p>
+              <p className={styles.footerText}>КПП.0000000000</p>
+              <p className={styles.footerText}>
+                РАСЧЁТНЫЙ СЧЕТ.0000000000000000000
+              </p>
+              <p className={styles.footerText}>
+                РАСЧЁТНЫЙ СЧЕТ.0000000000000000000
+              </p>
+            </div>
+          </div>
+
+          {/* Правая колонка */}
+          <div className={styles.footerCol}><a href={"/"}>SEO Продвижение.</a></div>
+        </footer>
       </div>
     </div>
   );
