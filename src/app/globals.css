@@ -30,5 +30,5 @@ a {
 
 .react-simple-image-viewer__modal-content {
   width: auto !important;
-  height: auto !important;
+  height: 60vh !important;
 }
