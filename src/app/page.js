@@ -241,22 +241,36 @@ export default function Home() {
 
           {/* Левая колонка */}
           <div className={styles.footerCol}>
-            <a href="\"><Image className={styles.footerLogo} src={img16} width={60} height={50} alt="logo" /></a>
+            <a href="\">
+              <Image
+                className={styles.footerLogo}
+                src={img16}
+                width={60}
+                height={50}
+                alt="logo"
+              />
+            </a>
             <h3 className={styles.footerHeading}>Реквизиты</h3>
             <div className={styles.footerGroup}>
-              <p className={styles.footerText}>ИНН.0000000000</p>
-              <p className={styles.footerText}>КПП.0000000000</p>
+              <p className={styles.footerText}>ИНН.7725498040</p>
+              <p className={styles.footerText}>КПП.772501001</p>
+              <p className={styles.footerText}>БИГ БАНКА.044525104</p>
               <p className={styles.footerText}>
-                РАСЧЁТНЫЙ СЧЕТ.0000000000000000000
+                РАСЧЁТНЫЙ СЧЕТ. 40702810501500025779
               </p>
               <p className={styles.footerText}>
-                РАСЧЁТНЫЙ СЧЕТ.0000000000000000000
+                КОР СЧЕТ. 30101810745374525104
+              </p>
+              <p className={styles.footerText}>
+                ТЕЛ: +7(963)624-55-10
               </p>
             </div>
           </div>
 
           {/* Правая колонка */}
-          <div className={styles.footerCol}><a href={"/"}>SEO Продвижение.</a></div>
+          <div className={styles.footerCol}>
+            <a href={"/"}>SEO Продвижение.</a>
+          </div>
         </footer>
       </div>
     </div>
