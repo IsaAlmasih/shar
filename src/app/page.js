@@ -157,7 +157,7 @@ export default function Home() {
             <li>Цена: МКМ39 — 57000 руб., МКМ59 — 65000 руб.</li>
           </ul>
         </div>
-        <div className={styles.video}>
+        {/* <div className={styles.video}>
           <h2>Видео инструкция.</h2>
           <iframe
             title="28 декабря 2021 г."
@@ -183,7 +183,7 @@ export default function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
-        </div>
+        </div> */}
         <div className={styles.video}>
           <h2>Машина в работе</h2>
           <iframe
@@ -219,7 +219,7 @@ export default function Home() {
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A590e57a4b7be241dc451428b14f86ef59816a8888cea70038fb858f36b1a71e4&amp;source=constructor"
           width="100%"
           height="400"
-          frameborder="0"
+          frameBorder="0"
         ></iframe>
         {/* Подвал */}
         <footer className={styles.footer}>
@@ -250,16 +250,16 @@ export default function Home() {
                 alt="logo"
               />
             </a>
-            <h3 className={styles.footerHeading}>Реквизиты</h3>
+            <h3 className={styles.footerHeading}>Реквизиты:</h3>
             <div className={styles.footerGroup}>
-              <p className={styles.footerText}>ИНН.7725498040</p>
-              <p className={styles.footerText}>КПП.772501001</p>
-              <p className={styles.footerText}>БИГ БАНКА.044525104</p>
+              <p className={styles.footerText}>ИНН 7725498040</p>
+              <p className={styles.footerText}>КПП 772501001</p>
+              <p className={styles.footerText}>БИГ БАНКА 044525104</p>
               <p className={styles.footerText}>
-                РАСЧЁТНЫЙ СЧЕТ. 40702810501500025779
+                РАСЧЁТНЫЙ СЧЕТ 40702810501500025779
               </p>
               <p className={styles.footerText}>
-                КОР СЧЕТ. 30101810745374525104
+                КОР СЧЕТ 30101810745374525104
               </p>
               <p className={styles.footerText}>
                 ТЕЛ: +7(963)624-55-10

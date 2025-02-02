@@ -15,8 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Клеемазательная машина",
-  description:
-    "Клеемазательная машина. Изготовление клеемазательных машин. Продажа клеемазательных машин.     Производственная компания SHAROVtechnologies. Разработка изготовлением клеемазательного оборудования. Основная наша продукция: КЛЕЕМАЗАТЕЛЬНЫЕ МАШИНЫ.",
+  description:""
 };
 
 export default function RootLayout({ children }) {
